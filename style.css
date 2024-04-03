@@ -162,6 +162,7 @@ nav.right .profile-img-container img {
     right: 0;
     position: fixed;
     z-index: 1;
+    margin-right: 24px;
 }
 
 .news-feed .new-post {
@@ -699,7 +700,7 @@ nav.right .profile-img-container img {
     background: #bcc0c4;
 }
 
-@media (max-width: 1225px) {
+@media (max-width: 1280px) {
     .main-wrapper .sidebar-right {
         display: none;
     }
