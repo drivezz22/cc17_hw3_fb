@@ -705,3 +705,21 @@ nav.right .profile-img-container img {
         display: none;
     }
 }
+
+@media (max-width: 880px) {
+    .main-wrapper .sidebar-left {
+        display: none;
+    }
+
+    .main-wrapper .news-feed {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        width: 100vw;
+        overflow-y: auto;
+        overflow-x: hidden;
+        min-height: 100vh;
+    }
+}
