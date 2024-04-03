@@ -126,30 +126,42 @@ nav.right .profile-img-container img {
 }
 
 .main-wrapper .sidebar-left {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     width: 360px;
     padding: 10px;
-    position: relative;
+    top: 56px;
+    bottom: 0;
+    position: fixed;
     overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1;
 }
 
 .main-wrapper .news-feed {
-    min-height: 100vh;
-    flex-basis: 590px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 4px;
-    height: 100%;
+    top: 56px;
+    left: 360px;
+    min-width: calc(100vw - 360px - 360px);
+    position: sticky;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100vh;
+    z-index: 2;
 }
 
 .main-wrapper .sidebar-right {
-    min-height: 100vh;
+    min-height: 360px;
     display: flex;
     flex-direction: column;
-    width: 360px;
+    top: 56px;
+    right: 0;
+    position: fixed;
+    z-index: 1;
 }
 
 .news-feed .new-post {
@@ -673,4 +685,22 @@ nav.right .profile-img-container img {
 
 .add-new-group .group:active {
     background-color: #d8d9dc;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e6e7eb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bcc0c4;
+}
+
+@media (max-width: 1225px) {
+    .main-wrapper .sidebar-right {
+        display: none;
+    }
 }
