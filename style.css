@@ -109,6 +109,11 @@ nav.right .round-icon {
     filter: brightness(80%);
 }
 
+nav.right .profile-img-container img {
+    width: 100%;
+    border-radius: 50%;
+}
+
 .main-wrapper {
     min-height: calc(100vh - 56px);
     background-color: #f0f2f5;
@@ -127,6 +132,7 @@ nav.right .round-icon {
     width: 360px;
     padding: 10px;
     position: relative;
+    overflow-y: auto;
 }
 
 .main-wrapper .news-feed {
@@ -507,6 +513,17 @@ nav.right .round-icon {
     background-color: #e5e5e5;
 }
 
+.profile-name.sidebox .profile-img-container {
+    width: 36px;
+    height: 36px;
+    margin-right: 16px;
+}
+
+.profile-img-container img {
+    width: 100%;
+    border-radius: 50%;
+}
+
 .sidebar-left .sidebar-icon .sidebox {
     width: 320px;
     height: 44px;
@@ -519,8 +536,21 @@ nav.right .round-icon {
     border-radius: 8px;
 }
 
-.sidebox svg {
+.sidebox i,
+.sidebox .img-container {
     margin-right: 16px;
+}
+
+.sidebox .drop-down-container {
+    margin: 4px 20px 4px 4px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #e4e6eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
 }
 
 .profile-name {
